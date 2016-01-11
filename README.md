@@ -1,5 +1,6 @@
 
 ## Bates
+> The React front-end butler
 
 One more front-end builder.  
 It handles all the default configurations and tasks for my React and node projects.
