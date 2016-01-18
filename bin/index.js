@@ -1,8 +1,11 @@
 #!/bin/bash
 
+export LOCAL=node_modules/bates
+export PATH=$PATH:$(pwd)/node_modules/.bin:$(pwd)/node_modules/bates/node_modules/.bin
+
 if [ $1 = "start" ]; then
-  { node node_modules/bates/src/devServer/index.js & node_modules/.bin/onchange src -- node_modules/bates/bin/test.sh; }
+  { node $LOCAL/src/devServer/index.js & onchange src -- $LOCAL/bin/test.sh; }
 fi
 if [ $1 = "test" ]; then
-  node_modules/bates/bin/test.sh
+  $LOCAL/bin/test.sh
 fi

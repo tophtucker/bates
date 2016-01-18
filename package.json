@@ -5,7 +5,7 @@
   "repository": "https://github.com/luiscarli/bates",
   "main": "index.js",
   "bin": {
-    "eslint": "./bin/index.js"
+    "bates": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,6 @@
   "author": "Luis Carli",
   "license": "MIT",
   "dependencies": {
-    "@luiscarli/shallow-render": "^1.0.0",
     "babel-cli": "^6.3.17",
     "babel-core": "^6.3.26",
     "babel-eslint": "^5.0.0-beta6",
