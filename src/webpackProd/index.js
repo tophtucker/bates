@@ -29,8 +29,8 @@ module.exports = {
       loader: 'babel',
       include: path.join(process.cwd(), 'src'),
       query: {
-        extends: path.join(__dirname, 'src')
-      }
+        extends: path.join(__dirname, '../../.babelrc'),
+      },
     }],
   },
 }

@@ -5,7 +5,7 @@
   "repository": "https://github.com/luiscarli/bates",
   "main": "index.js",
   "bin": {
-    "bates": "./bin/index.js"
+    "bates": "./bin/bates.sh"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
