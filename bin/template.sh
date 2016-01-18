@@ -1,5 +1,14 @@
 #!/bin/bash
 
+if [ ! -e .gitignore ]; then
+  cp $BATES_PTH/template/.gitignore ./
+fi
+if [ ! -e .npmignore ]; then
+  cp $BATES_PTH/template/.npmignore ./
+fi
+if [ ! -e .travis.yml ]; then
+  cp $BATES_PTH/template/.travis.yml ./
+fi
 if [ ! -d dist ]; then
   mkdir dist
 fi

@@ -2,5 +2,7 @@ node_modules
 *.log
 .DS_Store
 dist/bundle.js
-lib
+dist/200.html
+dist/img
+src
 coverage
