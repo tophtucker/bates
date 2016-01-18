@@ -6,6 +6,9 @@ export PATH=$PATH:$(pwd)/node_modules/.bin
 DEV_SERVER=$BATES_PTH/src/devServer
 TEST=$BATES_PTH/bin/test.sh
 
+if [ $1 = "template" ]; then
+  template.sh
+fi
 if [ $1 = "start" ]; then
   echo "npm prune, npm start"
   parallelshell \
@@ -45,7 +48,6 @@ if [ $1 = "cov" ]; then
     echo '{"presets":["react","es2015","stage-0"]}' > .babelrc
   fi
   NODE_ENV=test
-  babel-node \
   node_modules/.bin/isparta cover \
   --report text --report lcovonly --report html \
   --include 'src/**/!(*-test).js' \
