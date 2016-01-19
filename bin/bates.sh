@@ -46,6 +46,12 @@ fi
 if [ $1 = "deploy" ]; then
   surge --project ./dist
 fi
+if [ $1 = "release" ]; then
+  node $BATES_PTH/src/release
+fi
+if [ $1 = "lastRelease" ]; then
+  node $BATES_PTH/src/release/lastPublishInfo
+fi
 if [ $1 = "cov" ]; then
   if [ ! -e .babelrc ]; then
     HAS_BABELRC=false
