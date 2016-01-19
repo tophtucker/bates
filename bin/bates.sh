@@ -11,7 +11,7 @@ if [ $1 = "template" ]; then
 fi
 if [ $1 = "start" ]; then
   npm prune
-  npm start
+  npm update
   parallelshell \
   "node $DEV_SERVER" \
   "onchange src -- $TEST" \
