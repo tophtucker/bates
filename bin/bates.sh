@@ -15,10 +15,14 @@ if [ $1 = "start" ]; then
   parallelshell \
   "node $DEV_SERVER" \
   "onchange src -- $TEST" \
-  "npm outdated"
+  "npm outdated" \
+  "node $BATES_PTH/src/release/lastPublishInfo"
 fi
 if [ $1 = "test" ]; then
   $TEST
+fi
+if [ $1 = "test:watch" ]; then
+  onchange src -- $TEST
 fi
 if [ $1 = "server" ]; then
   node $DEV_SERVER

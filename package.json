@@ -9,7 +9,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "lastRelease": "node src/release/lastPublishInfo",
     "release": "node src/release"
   },
   "author": "Luis Carli",
