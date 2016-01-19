@@ -6,7 +6,7 @@ Bates is my front-end butler, it can be yours to, if you share the same opinions
 
 The contemporary front-end build pipeline is a very opinionated place, but at the same time, it's a place that after you settle down on how you like your configs, you just want the same configs in every new project. And at this point the problem is how to clone and update the config of all those projects?
 
-For that reason I trained Bates, he handles all the default configurations, deploys and builds for my React and node projects. My projects dev-dependency shrank down to only one, it's beautiful.
+For that reason I trained Bates, he handles all the default configurations, deploys and builds for my React and node projects. My projects dev-dependency shrank down to only one, and my deploys and releases to one command. It's beautiful.
 
 Bates excels on three main cases:
 1. React sites
