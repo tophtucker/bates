@@ -37,6 +37,7 @@
     "redbox-react": "^1.1.1",
     "rimraf": "^2.4.3",
     "shelljs": "^0.5.3",
+    "surge": "^0.17.6",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"

@@ -10,7 +10,8 @@ if [ $1 = "template" ]; then
   $BATES_PTH/bin/template.sh
 fi
 if [ $1 = "start" ]; then
-  echo "npm prune, npm start"
+  npm prune
+  npm start
   parallelshell \
   "node $DEV_SERVER" \
   "onchange src -- $TEST" \
@@ -41,6 +42,9 @@ if [ $1 = "dist" ]; then
   NODE_ENV=production
   webpack \
   --config $BATES_PTH/src/webpackDist
+fi
+if [ $1 = "deploy" ]; then
+  surge --project ./dist
 fi
 if [ $1 = "cov" ]; then
   if [ ! -e .babelrc ]; then
