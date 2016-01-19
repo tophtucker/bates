@@ -56,6 +56,9 @@ fi
 if [ $1 = "lastRelease" ]; then
   node $BATES_PTH/src/release/lastPublishInfo
 fi
+if [ $1 = "githubRelease" ]; then
+  node $BATES_PTH/src/release/githubRelease
+fi
 if [ $1 = "cov" ]; then
   if [ ! -e .babelrc ]; then
     HAS_BABELRC=false
