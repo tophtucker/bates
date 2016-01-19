@@ -15,6 +15,7 @@
   "author": "Luis Carli",
   "license": "MIT",
   "dependencies": {
+    "@luiscarli/shallow-render": "^1.0.0",
     "babel-cli": "^6.3.17",
     "babel-core": "^6.3.26",
     "babel-eslint": "^5.0.0-beta6",
@@ -35,6 +36,7 @@
     "mocha": "^2.3.3",
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
+    "react": "^0.14.0",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
