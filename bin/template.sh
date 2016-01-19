@@ -19,11 +19,11 @@ if [ ! -d src ]; then
   mkdir src
 fi
 if [ ! -e src/dist.js ]; then
-  cp $BATES_PTH/src/dist.js src/
+  cp $BATES_PTH/template/dist.js src/
 fi
 if [ ! -e src/index.js ]; then
-  cp $BATES_PTH/src/index.js src/
+  cp $BATES_PTH/template/index.js src/
 fi
 if [ ! -e src/main.js ]; then
-  cp $BATES_PTH/src/main.js src/
+  cp $BATES_PTH/template/main.js src/
 fi
