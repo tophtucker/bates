@@ -48,5 +48,9 @@
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">=3.0.0"
   }
 }
