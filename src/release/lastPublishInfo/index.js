@@ -1,3 +1,3 @@
 
-require('babel-register')
+require('../../babelhook')
 require('../../release/runPublishInfo')
