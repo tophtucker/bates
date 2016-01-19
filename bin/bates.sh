@@ -7,7 +7,7 @@ DEV_SERVER=$BATES_PTH/src/devServer
 TEST=$BATES_PTH/bin/test.sh
 
 if [ $1 = "template" ]; then
-  template.sh
+  $BATES_PTH/bin/template.sh
 fi
 if [ $1 = "start" ]; then
   echo "npm prune, npm start"
