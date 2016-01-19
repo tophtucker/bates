@@ -27,19 +27,19 @@ if [ $1 = "clean" ]; then
   rimraf lib dist/**.js
 fi
 if [ $1 = "lib" ]; then
-  NODE_ENV=production
+  export NODE_ENV=production
   babel src \
   --presets react,es2015,stage-0 \
   --ignore *.test.js \
   --out-dir lib
 fi
 if [ $1 = "bundle" ]; then
-  NODE_ENV=production
+  export NODE_ENV=production
   webpack \
   --config $BATES_PTH/src/webpackBundle
 fi
 if [ $1 = "dist" ]; then
-  NODE_ENV=production
+  export NODE_ENV=production
   webpack \
   --config $BATES_PTH/src/webpackDist
 fi
@@ -57,7 +57,7 @@ if [ $1 = "cov" ]; then
     HAS_BABELRC=false
     echo '{"presets":["react","es2015","stage-0"]}' > .babelrc
   fi
-  NODE_ENV=test
+  export NODE_ENV=test
   node_modules/.bin/isparta cover \
   --report text --report lcovonly --report html \
   --include 'src/**/!(*-test).js' \
