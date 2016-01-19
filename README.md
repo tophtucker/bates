@@ -1,17 +1,17 @@
 
 ## Bates
-> he knows how I like my front-end, automated
+> He knows how I like my front-end. Automated.
 
-Bates is my front-end butler, it can be yours to, if you share the same opinions and desires as me. Or he can be just be a starting point for a twisted new clone.
+Bates is my front-end butler, it can be yours too, if you share the same opinions and desires as me. Or he can be just be a starting point for your twisted new clone.
 
-The contemporary front-end build pipeline is a very opinionated place, but at the same time, it's a place that after you settle down on how you like your configs, you just want the same configs in every new project. And at this point the problem is how to clone and update the config of all those projects?
+The contemporary front-end build pipeline is a very opinionated place, but at the same time, it's a place that after you settle down on how you like your configs, **you just want the same configs in every new project**. And at this point the problem is **how to clone and update the config of all your projects**?
 
-For that reason I trained Bates, he handles all the default configurations, deploys and builds for my React and node projects. My projects dev-dependency shrank down to only one, and my deploys and releases to one command. It's beautiful.
+**For that reason I trained Bates**, he handles all the default configurations, deploys and builds for my React and node projects. My projects dev-dependency shrank down to only one, and my deploys and releases are one command away. It's beautiful.
 
 Bates excels on three main cases:
-1. React sites
-2. React components npm packages
-3. ES6/7 npm packages
+- React sites
+- React components npm packages
+- ES6/7 npm packages
 
 ```sh
 npm i bates --save-dev
