@@ -14,7 +14,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use(require('webpack-hot-middleware')(compiler))
 app.use(express.static(path.join(process.cwd(), 'dist')))
 app.get('*', function readFile(req, res) {
-  res.send(path.join(process.cwd(), 'dist/200.html'))
+  res.sendFile(path.join(process.cwd(), 'dist/200.html'))
 })
 app.listen(3000, 'localhost', function startServer(err) {
   if (err) {
