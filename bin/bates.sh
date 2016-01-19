@@ -28,7 +28,7 @@ if [ $1 = "server" ]; then
   node $DEV_SERVER
 fi
 if [ $1 = "clean" ]; then
-  rimraf lib dist/**.js
+  rimraf lib coverage dist/**.js
 fi
 if [ $1 = "lib" ]; then
   export NODE_ENV=production
