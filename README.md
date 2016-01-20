@@ -1,17 +1,16 @@
 
 ## Bates
-> He knows how I like my front-end. Automated.
+> He knows how I like my front-end: automated.
 
-Bates is my front-end butler, it can be yours too, if you share the same opinions and desires as me. Or he can just be a starting point for a new twisted bizarro Bates.
+The contemporary front-end stack and build pipeline is a very opinionated place, with lots of choices for a lot of different setups. **Bates is here to help automate a specific set of choices for React front-end projects.**
 
-The contemporary front-end build pipeline is a very opinionated place, but at the same time, it's a place that after you settle down on how you like your configs, **you just want the same configs in every new project**. And at this point the problem is **how to clone and update the config of all those projects**?
+Bates work together with the following code style and architecture: [code style](docs/style.md). The main part of it are the commit messages format, the folder structure, the inlined styles and the data flow without flux libraries.
 
-**For that reason I trained Bates**, he handles all the default configurations, deploys and builds for my React and node projects. My projects dev-dependency shrank down to only one, and my deploys and releases are now one command away. It's beautiful.
+There're two main entry points on the code that Bates helps to handle:  
+- The *site* entry point, and
+- The *package* entry point.
 
-Bates excels on three main cases:
-- React single page apps
-- React components npm packages
-- ES7 npm packages
+The site is transpiled, served and hot-reloaded during development; and can be bundled and minified before deployment. The /src can be transpiled to a /lib folder and released to be consumed by other React projects, it can also be bundled for distribution directly on browsers. The site can also be used as a dev playground of on React component library projects.
 
 ```sh
 npm i bates --save-dev
@@ -45,7 +44,7 @@ Generate a distribution file, for those who want to consume your npm package usi
 Delete any build and transpiled file.
 
 `npm run bates -- deploy`
-Deploy your dist folder to surge. You need to have a CNAME file if you don't to fill any prompts here.
+Deploy your dist folder to surge. You need to have a CNAME file if you don't want to fill any prompts here.
 
 `npm run bates -- release`  
 Using the git commits, check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.

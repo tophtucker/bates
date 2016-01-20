@@ -1,7 +1,7 @@
 {
   "name": "bates",
   "version": "0.1.9",
-  "description": "react front-end butler",
+  "description": "Front-end butler for React projects",
   "repository": "https://github.com/luiscarli/bates",
   "main": "index.js",
   "bin": {
