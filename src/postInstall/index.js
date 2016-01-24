@@ -1,7 +1,8 @@
 
 var fs = require('fs')
+var path = require('path')
 
-var pkgFilename = '../../package.json'
+var pkgFilename = path.join(process.cwd(), '../../package.json'))
 
 if (!fs.existsSync(pkgFilename)) {
   return
