@@ -8,7 +8,7 @@
     "bates": "./bin/bates.sh"
   },
   "scripts": {
-    "postinstall": "node src/postInstall/index.js && cd ../../ && npm run bates -- template",
+    "postinstall": "node src/postInstall/index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "release": "node src/release"
   },

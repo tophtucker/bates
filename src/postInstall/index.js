@@ -2,6 +2,11 @@
 var fs = require('fs')
 
 var pkgFilename = '../../package.json'
+
+if (!fs.existsSync(pkgFilename)) {
+  return
+}
+
 var pkg = require(pkgFilename)
 
 if (!pkg.scripts.start) {
