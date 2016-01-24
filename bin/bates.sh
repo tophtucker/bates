@@ -48,6 +48,9 @@ if [ $1 = "dist" ]; then
   --config $BATES_PTH/src/webpackDist
 fi
 if [ $1 = "deploy" ]; then
+  export NODE_ENV=production
+  webpack \
+  --config $BATES_PTH/src/webpackBundle
   surge --project ./dist
 fi
 if [ $1 = "release" ]; then

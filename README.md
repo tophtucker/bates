@@ -23,13 +23,12 @@ npm run bates -- template
 npm run bates -- start
 # start dev server at: http://localhost:3000
 # run tests and lint on change
-# do ctrl+c to close the server
+# hit ctrl+c to close the server
 ```
 
 Edit the `src/main.js`, when you want to do a quick deploy do:
 
 ```sh
-npm run bates -- bundle
 npm run bates -- deploy
 # follow the prompt, choose your domain
 # the site will be available at http://yourDomain.surge.sh
@@ -43,29 +42,32 @@ If missing, add some general files to your project.
 `npm run bates -- start`  
 Prune and update your dependencies, start a hot-reloaded babel transpiled server at localhost:3000, run tests and lint on change, tell you about your outdated packages, inform you about your last release and what have changed until now.
 
+`npm run bates -- server`  
+Run just the server from the *start* command.
+
 `npm run bates -- test`  
 Test and lint your /src.
 
 `npm run bates -- test:watch`  
 Same as above, but everytime the source change
 
-`npm run bates -- server`  
-Run just the server from the *start* command.
+`npm run bates -- deploy`
+Create bundle file and deploy your dist folder to surge. You need to have a CNAME file if you don't want to fill any prompts here.
 
-`npm run bates -- lib`  
-Transpile the code from /src to /lib, for when you want to release the code as a npm package.
+`npm run bates -- release`  
+Using the git commits, check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
 
 `npm run bates -- bundle`  
 Generate a bundle file on the /dist folder, for when you want to deploy your code as a website.
 
+`npm run bates -- lib`  
+Transpile the code from /src to /lib, for when you want to release the code as a npm package.
+
 `npm run bates -- dist`  
 Generate a distribution file, for those who want to consume your npm package using html script tags directly.
 
+`npm run bates -- cov`  
+Run the test coverage and open a browser with the results.
+
 `npm run bates -- clean`  
 Delete any build and transpiled file.
-
-`npm run bates -- deploy`
-Deploy your dist folder to surge. You need to have a CNAME file if you don't want to fill any prompts here.
-
-`npm run bates -- release`  
-Using the git commits, check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
