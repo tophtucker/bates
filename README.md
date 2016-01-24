@@ -4,14 +4,6 @@
 
 The contemporary front-end stack and build pipeline is a very opinionated place, with lots of choices for a lot of different setups. **Bates is here to help automate a specific set of choices for React front-end projects.**
 
-Bates work together with the following code style and architecture: [code style](docs/style.md). The main part of it are the commit messages format, the folder structure, the inlined styles and the data flow without flux libraries.
-
-There're two main entry points on the code that Bates helps to handle:  
-- The *site* entry point (main.js), and
-- The *package* entry point (index.js).
-
-The site is transpiled, served and hot-reloaded during development; and can be bundled and minified before deployment. The /src can be transpiled to a /lib folder and released to be consumed by other React projects, it can also be bundled for distribution directly on browsers. The site can also be used as a dev playground of on React component library projects.
-
 ## Quick start
 
 ```sh
@@ -33,6 +25,16 @@ npm run bates -- deploy
 # follow the prompt, choose your domain
 # the site will be available at http://yourDomain.surge.sh
 ```
+
+## Info
+
+Bates work better together with the following code style and architecture: [code style](docs/style.md). The main part of it are the commit messages format, the folder structure, the inlined styles and the data flow without flux libraries.
+
+There're two main entry points on the code that Bates helps to handle:  
+- The *site* entry point (main.js), and
+- The *package* entry point (index.js).
+
+The site is transpiled, served and hot-reloaded during development; and can be bundled and minified before deployment. The /src can be transpiled to a /lib folder and released to be consumed by other React projects, it can also be bundled for distribution directly on browsers. The site can also be used as a dev playground of on React component library projects.
 
 ## API
 
