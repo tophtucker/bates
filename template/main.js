@@ -1,4 +1,4 @@
-// devServer entry point
+// site entry point
 
 import React from 'react'
 import ReactDOM from 'react-dom'

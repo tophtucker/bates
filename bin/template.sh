@@ -18,9 +18,9 @@ fi
 if [ ! -d src ]; then
   mkdir src
 fi
-if [ ! -e src/dist.js ]; then
-  cp $BATES_PTH/template/dist.js src/
-fi
+# if [ ! -e src/dist.js ]; then
+#   cp $BATES_PTH/template/dist.js src/
+# fi
 if [ ! -e src/index.js ]; then
   cp $BATES_PTH/template/index.js src/
 fi
