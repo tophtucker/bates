@@ -37,6 +37,7 @@
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
     "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
