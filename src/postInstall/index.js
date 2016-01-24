@@ -1,8 +1,7 @@
 
 var fs = require('fs')
-var path = require('path')
 
-var pkgFilename = path.join(process.cwd(), 'package.json')
+var pkgFilename = '../../package.json'
 var pkg = require(pkgFilename)
 
 if (!pkg.scripts.start) {
