@@ -11,5 +11,5 @@ const App = () => (
 
 ReactDOM.render(
   <App/>,
-  document.getElementById('rootNode')
+  document.getElementById('root')
 )
