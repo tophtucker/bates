@@ -27,7 +27,7 @@ const formatCommits = (titles, messages) => {
 export const getCommits = clbck => {
   exec(TITLES_CMD, (error, stdout) => {
     if (error) {
-      console.log('error getting git log titles')
+      // console.log('error getting git log titles')
       return
     }
     const titles = stdout.split('::').map(d => d.trim())
