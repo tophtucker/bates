@@ -26,7 +26,7 @@ npm run bates -- start
 # hit ctrl+c to close the server
 ```
 
-Edit the `src/main.js`, when you want to do a quick deploy do:
+Edit the `src/main.js`, when you want to deploy the site run:
 
 ```sh
 npm run bates -- deploy
