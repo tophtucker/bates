@@ -12,15 +12,36 @@ There're two main entry points on the code that Bates helps to handle:
 
 The site is transpiled, served and hot-reloaded during development; and can be bundled and minified before deployment. The /src can be transpiled to a /lib folder and released to be consumed by other React projects, it can also be bundled for distribution directly on browsers. The site can also be used as a dev playground of on React component library projects.
 
+## Quick start
+
 ```sh
 npm i bates --save-dev
+
+npm run bates -- template
+# create base files
+
+npm run bates -- start
+# start dev server at: http://localhost:3000
+# run tests and lint on change
+# do ctrl+c to close the server
 ```
+
+Edit the `src/main.js`, when you want to do a quick deploy do:
+
+```sh
+npm run bates -- bundle
+npm run bates -- deploy
+# follow the prompt, choose your domain
+# the site will be available at http://yourDomain.surge.sh
+```
+
+## API
 
 `npm run bates -- template`  
 If missing, add some general files to your project.
 
 `npm run bates -- start`  
-Prune and update your dependencies, start a hot-reloaded babel transpiled server at localhost:300, run tests and lint on change, tell you about your outdated packages, inform you about your last release and what have changed until now.
+Prune and update your dependencies, start a hot-reloaded babel transpiled server at localhost:3000, run tests and lint on change, tell you about your outdated packages, inform you about your last release and what have changed until now.
 
 `npm run bates -- test`  
 Test and lint your /src.
