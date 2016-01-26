@@ -18,7 +18,8 @@ npm run bates -- start
 # hit ctrl+c to close the server
 ```
 
-Edit the `src/main.js`, when you want to deploy the site run:
+Edit the `src/main.js`. 
+When you want to deploy the site run:
 
 ```sh
 npm run bates -- deploy
