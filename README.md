@@ -39,7 +39,7 @@ The site is transpiled, served and hot-reloaded during development; and can be b
 
 ## API
 
-### Development
+**Development**
 
 `npm run bates -- template`  
 If missing, add some base files to your project.
@@ -62,7 +62,7 @@ Same as above, but every time the source change
 `npm run bates -- cov`  
 Run the test coverage and open a browser with the results.
 
-### Site deployment and package releases
+**Site deployment and package releases**
 
 `npm run bates -- deploy`  
 Generate a bundle file from /src/main.js on the /dist folder and deploy that folder to [surge.sh](https://surge.sh/).  
