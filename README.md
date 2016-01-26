@@ -36,8 +36,6 @@ There're three main entry points on the code that Bates helps to handle:
 - A *npm package* entry point (src/index.js), and
 - A *html script distribution* entry point (src/dist.js)
 
-The site is transpiled, served and hot-reloaded during development; and can be bundled and minified before deployment. The /src can be transpiled to a /lib folder and released to be consumed by other React projects, it can also be bundled for distribution directly on browsers. The site can also be used as a dev playground of on React component library projects.
-
 ## API
 
 **Development**
@@ -88,4 +86,4 @@ Create release notes since your last release, using your [git commit messages](d
 Travis need to have a `GIT_TOKEN` environment variable set up with your project token.
 
 `npm run bates -- clean`  
-Delete any build and transpiled file.
+Delete all build and transpiled files.
