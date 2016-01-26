@@ -65,7 +65,8 @@ Run the test coverage and open a browser with the results.
 ### Site deployment and package releases
 
 `npm run bates -- deploy`  
-Generate a bundle file from /src/main.js on the /dist folder and deploy that folder to (surge.sh)[https://surge.sh/]. If you add a (CNAME)[https://surge.sh/help/remembering-a-domain] file, you don't need to fill any prompts here.
+Generate a bundle file from /src/main.js on the /dist folder and deploy that folder to [surge.sh](https://surge.sh/).  
+If you add a [CNAME](https://surge.sh/help/remembering-a-domain) file, you don't need to fill any prompts here.
 
 `npm run bates -- bundle`  
 Generate a bundle file from /src/main.js on the /dist folder, for when you want to deploy your code as a website.
@@ -75,7 +76,7 @@ Transpile the code from /src to /lib, for when you want to release the code as a
 
 `npm run bates -- release`  
 This command is aimed at automating releases on a CI server.
-Using the (git commits)[docs/style.md#commit-messages], check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
+Using the [git commits](docs/style.md#commit-messages), check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
 
 `npm run bates -- dist`  
 Generate a distribution file, for those who want to consume your npm package using html script tags directly.
