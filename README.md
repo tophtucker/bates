@@ -75,11 +75,16 @@ Generate a bundle file from /src/main.js on the /dist folder, for when you want 
 Transpile the code from /src to /lib, for when you want to release the code as a npm package.
 
 `npm run bates -- release`  
-This command is aimed at automating releases on a CI server.
-Using the [git commits](docs/style.md#commit-messages), check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
+This command is aimed at automating releases on a CI server.  
+Using your [git commit messages](docs/style.md#commit-messages), check for the changes since your last release and suggest a new version. If approved, bump the package and push a new tag.
 
 `npm run bates -- dist`  
 Generate a distribution file, for those who want to consume your npm package using html script tags directly.
+
+`npm run bates -- githubRelease`  
+This command should be used on TravisCI, after a release.
+Create release notes since your last release, using your [git commit messages](docs/style.md#commit-messages). Do a release on your github project.  
+Travis need to have a `GIT_TOKEN` environment variable set up with your project token.
 
 `npm run bates -- clean`  
 Delete any build and transpiled file.
