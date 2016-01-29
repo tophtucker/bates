@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -e .gitignore ]; then
-  cp $BATES_PTH/template/.gitignore ./
+  cp $BATES_PTH/template/gitignore ./.gitignore
 fi
 if [ ! -e .npmignore ]; then
   cp $BATES_PTH/template/.npmignore ./
