@@ -36,6 +36,8 @@ There're three main entry points on the code that Bates helps to handle:
 - A *npm package* entry point (src/index.js), and
 - A *html script distribution* entry point (src/dist.js)
 
+For information on Travis continuous deploy/release see: [travis setup](docs/travis.md)
+
 ## API
 
 **Development**
