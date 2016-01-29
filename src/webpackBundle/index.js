@@ -12,12 +12,16 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production'),
-      },
+      '__DEV__': 'false',
+      'process.env.NODE_ENV': '"production"',
     }),
     new webpack.optimize.UglifyJsPlugin({
+      mange: true,
+      comments: false,
       compressor: {
+        pure_getters: true,
+        unsafe: true,
+        unsafe_comps: true,
         screw_ie8: true,
         warnings: false,
       },
