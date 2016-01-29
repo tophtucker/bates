@@ -1,11 +1,23 @@
 
 ## Travis automatically deploy and releases
 
-### Surge Site deploy
+First, add your project to [Travis](https://travis-ci.org/).
 
-The site can be automatically deployed in all master branch pushes that passes the tests.
+### Surge.sh site deploy
 
-To setup uncomment the following lines on `.travis.yml` (this file is created by `npm run bates -- template`):
+The site can be automatically deployed to [surge.sh](https://surge.sh/) in all master branch pushes that passes the tests.
+
+First do a local deploy for setting up your surge user, and checking if your domain is available:
+```sh
+$ npm run bates -- deploy
+```
+
+Add the domain to a [CNAME](https://surge.sh/help/remembering-a-domain) file on your /dist folder:
+```sh
+$ echo yourDomain.surge.sh > CNAME
+```
+
+Then setup your `.travis.yml` file by uncommenting the following lines (this file is created by `npm run bates -- template`):
 
 ```yml
 # SITE DEPLOY
