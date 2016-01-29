@@ -40,7 +40,7 @@ const getBody = ({fixes, features, breaks, chores}) => (
     body => plotCommits(body, features),
     body => plotTitle(body, fixes, 'fixe(s)'),
     body => plotCommits(body, fixes),
-    body => plotTitle(body, chores, 'other chores(s)', 'and '),
+    body => plotTitle(body, chores, 'other chore(s)', 'and '),
   )('')
 )
 
