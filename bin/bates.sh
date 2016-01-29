@@ -21,7 +21,7 @@ fi
 if [ $1 = "test" ]; then
   $TEST
 fi
-if [ $1 = "test:watch" ]; then
+if [ $1 = "testWatch" ]; then
   onchange src -- $TEST
 fi
 if [ $1 = "server" ]; then
