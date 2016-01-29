@@ -5,3 +5,18 @@ before_install:
 - npm i -g npm
 notifications:
   email: false
+
+## PACKAGE RELEASE (travis setup npm)
+# before_deploy:
+# - npm run bates -- lib
+# - npm run bates -- dist
+# after_deploy:
+# - npm run bates -- githubRelease
+
+## SITE DEPLOY
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: npm run bates -- deploy
+#   on:
+#     branch: master
