@@ -46,7 +46,7 @@ if [ $1 = "bundleSize" ]; then
   export NODE_ENV=production
   webpack \
   --config $BATES_PTH/src/webpackBundle \
-  --json | $BATES_PTH/node_modules/.bin/analyze-bundle-size
+  --json | analyze-bundle-size
 fi
 if [ $1 = "dist" ]; then
   export NODE_ENV=production
