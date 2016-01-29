@@ -57,7 +57,7 @@ Run just the server from the *start* command.
 `npm run bates -- test`  
 Test and lint your /src. Test files need to be named `*.test.js`
 
-`npm run bates -- test:watch`  
+`npm run bates -- testWatch`  
 Same as above, but every time the source change
 
 `npm run bates -- cov`  
@@ -71,6 +71,9 @@ If you add a [CNAME](https://surge.sh/help/remembering-a-domain) file, you don't
 
 `npm run bates -- bundle`  
 Generate a bundle file from /src/main.js on the /dist folder, for when you want to deploy your code as a website.
+
+`npm run bates -- bundleSize`  
+Generate an analysis of the bundle size.
 
 `npm run bates -- lib`  
 Transpile the code from /src to /lib, for when you want to release the code as a npm package.
