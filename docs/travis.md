@@ -59,3 +59,5 @@ after_deploy:
 ```sh
 $ npm run bates -- release
 ```
+
+For the automatic versioning bump and release notes to work, your commit-messages need to follow [this format](docs/style.md#commit-messages).
