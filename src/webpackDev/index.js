@@ -1,6 +1,6 @@
 
-var path = require('path');
-var webpack = require('webpack');
+var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
   devtool: 'eval',
@@ -14,7 +14,6 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new NpmInstallPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
@@ -28,4 +27,4 @@ module.exports = {
       }
     }]
   }
-};
+}
