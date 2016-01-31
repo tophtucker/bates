@@ -3,13 +3,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const App = () => (
-  <div>
-    App
-  </div>
-)
+document.title = 'Project'
+const Main = React.createClass({
+  render: () => <div>App</div>,
+})
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
-)
+ReactDOM.render(<Main/>, document.getElementById('root'))
