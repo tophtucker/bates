@@ -14,6 +14,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new NpmInstallPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
