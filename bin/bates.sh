@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 export BATES_PTH=node_modules/bates
 export PATH=$PATH:$(pwd)/node_modules/.bin
