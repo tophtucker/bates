@@ -1,6 +1,6 @@
 {
   "name": "bates",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Front-end butler for React projects",
   "repository": "https://github.com/luiscarli/bates",
   "main": "index.js",
