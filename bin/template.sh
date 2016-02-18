@@ -1,5 +1,8 @@
 #!/bin/bash
 
+if [ ! -e .eslintrc ]; then
+  cp $BATES_PTH/.eslintrc ./.eslintrc
+fi
 if [ ! -e .gitignore ]; then
   cp $BATES_PTH/template/gitignore ./.gitignore
 fi
