@@ -33,6 +33,7 @@
     "express": "^4.13.3",
     "github": "^0.2.4",
     "isparta": "^4.0.0",
+    "json-loader": "^0.5.4",
     "lodash": "^4.1.0",
     "mocha": "^2.3.3",
     "onchange": "^2.0.0",
