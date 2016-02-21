@@ -1,8 +1,6 @@
 #!/bin/bash
 
-if [ ! -e .eslintrc ]; then
-  cp $BATES_PTH/.eslintrc ./.eslintrc
-fi
+cp $BATES_PTH/.eslintrc ./.eslintrc
 if [ ! -e .gitignore ]; then
   cp $BATES_PTH/template/gitignore ./.gitignore
 fi
@@ -17,6 +15,9 @@ if [ ! -d dist ]; then
 fi
 if [ ! -e dist/200.html ]; then
   cp $BATES_PTH/template/200.html dist/
+fi
+if [ ! -e dist/favicon.png ]; then
+  cp $BATES_PTH/template/favicon.png dist/
 fi
 if [ ! -d src ]; then
   mkdir src
