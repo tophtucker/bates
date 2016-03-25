@@ -6,9 +6,25 @@ The contemporary front-end stack and build pipeline is a very opinionated place,
 
 ## Quick start
 
-```sh
-npm init
+Bates needs node >= 5 and npm >= 3.3  
+```bash
+# check the versions
+$ node -v && npm -v
+# update if necessary
+# use nvm to help you manage node versions https://github.com/creationix/nvm
+$ nvm i 5
+$ npm i npm -g
+```
 
+Create a new project
+```sh
+mkdir my-project
+cd my-project
+npm init
+```
+
+Install and run Bates
+```sh
 npm i bates --save-dev
 
 npm run bates -- template
