@@ -7,6 +7,8 @@ The contemporary front-end stack and build pipeline is a very opinionated place,
 ## Quick start
 
 ```sh
+npm init
+
 npm i bates --save-dev
 
 npm run bates -- template
