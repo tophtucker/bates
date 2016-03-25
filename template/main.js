@@ -9,8 +9,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 document.title = 'Project'
+
 const Root = React.createClass({
-  render: () => <div>App</div>,
+  render() {
+    return <div>
+      App
+    </div>
+  }
 })
 
 ReactDOM.render(<Root/>, document.getElementById('root'))
