@@ -31,3 +31,6 @@ fi
 if [ ! -e src/main.js ]; then
   cp $BATES_PTH/template/main.js src/
 fi
+if [ ! -e src/main.test.js ]; then
+  cp $BATES_PTH/template/main.test.js src/
+fi

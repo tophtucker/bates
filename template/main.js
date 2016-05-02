@@ -10,12 +10,12 @@ import ReactDOM from 'react-dom'
 
 document.title = 'Project'
 
-const Root = React.createClass({
+export const Root = React.createClass({
   render() {
     return <div>
       App
     </div>
-  }
+  },
 })
 
 ReactDOM.render(<Root/>, document.getElementById('root'))
