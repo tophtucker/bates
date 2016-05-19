@@ -1,0 +1,3 @@
+
+require('../babelhook')
+require('./getSchema')
