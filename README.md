@@ -70,7 +70,8 @@ Run tests and lint on change.
 Tell you about your outdated packages, your last release and what have changed until now.
 
 `npm run bates -- server`  
-Run just the server from the *start* command.
+Run just the server from the *start* command.  
+The server defaults to port 3000, an PORT env var can also be passed. Eg: `PORT=8080 npm run bates -- server`
 
 `npm run bates -- test`  
 Test and lint your /src. Test files need to be named `*.test.js`
@@ -110,3 +111,8 @@ Travis need to have a `GIT_TOKEN` environment variable set up with your project 
 
 `npm run bates -- clean`  
 Delete all build and transpiled files.
+
+`npm run bates -- getSchema`  
+Save graphql schema.json instrospection on root, for relay apps.  
+When a schema.json is found on the root, the transpile process automatically run the 'babel-relay-plugin'.  
+Defaults the query to http://localhost:5000/graphql, a HOST env can also be passed, for eg `HOST="http://localhost:8000" npm run bates -- getSchema`
