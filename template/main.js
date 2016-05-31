@@ -9,6 +9,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 document.title = 'Project'
+document.body.bgColor = 'white'
 
 export const Root = React.createClass({
   render() {
