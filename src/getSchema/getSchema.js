@@ -15,6 +15,7 @@ const introspectionQuery = `
       directives {
         name
         description
+        locations
         args {
           ...InputValue
         }
