@@ -4,9 +4,9 @@
 // import React from 'react'
 // import shallowRender from '@luiscarli/shallow-render'
 //
-// import {Root} from './main'
+// import {App} from './App'
 //
-// test('Root', () => {
-//   const component = shallowRender(<Root/>)
+// test('App', () => {
+//   const component = shallowRender(<App/>)
 //   assert.deepEqual(component.type, 'div')
 // })

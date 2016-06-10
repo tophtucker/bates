@@ -7,16 +7,32 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+// import Relay from 'react-relay'
+import _ from 'lodash/fp'
+import {Router, Route, IndexRoute, browserHistory} from 'react-router'
+
+import {App} from './App'
+import {Pages, pagesData} from './Pages'
+
+_.map = _.map.convert({cap: false})
 
 document.title = 'Project'
 document.body.bgColor = 'white'
 
-export const Root = React.createClass({
-  render() {
-    return <div>
-      App
-    </div>
-  },
-})
+// Relay.injectNetworkLayer(
+//   new Relay.DefaultNetworkLayer('http://localhost:5000/graphql')
+// )
 
-ReactDOM.render(<Root/>, document.getElementById('root'))
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <IndexRoute component={Pages}/>
+      {_.map((d, i) =>
+        <Route path={`page/${d.path}`} component={d.Component} key={i}/>,
+        pagesData,
+      )}
+      <Route path='*' component={Pages}/>
+    </Route>
+  </Router>
+  , document.getElementById('root')
+)
