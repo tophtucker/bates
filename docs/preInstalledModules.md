@@ -5,6 +5,8 @@
 - lodash
 - react
 - react-dom
+- react-router
+- stijl
 - @luiscarli/shallow-render
 
 **Js polyfills**
