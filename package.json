@@ -48,7 +48,7 @@
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
     "rimraf": "^2.4.3",
-    "stijl": "^0.4.2",
+    "stijl": "^0.5.0",
     "surge": "^0.18.0",
     "webpack": "^1.12.2",
     "webpack-bundle-size-analyzer": "^2.0.1",
