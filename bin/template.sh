@@ -2,13 +2,13 @@
 
 cp $BATES_PTH/.eslintrc ./.eslintrc
 if [ ! -e .gitignore ]; then
-  cp $BATES_PTH/template/gitignore ./.gitignore
+  cp $BATES_PTH/template/gitignore_template ./.gitignore
 fi
 if [ ! -e .npmignore ]; then
-  cp $BATES_PTH/template/.npmignore ./
+  cp $BATES_PTH/template/npmignore_template ./.npmignore
 fi
 if [ ! -e .travis.yml ]; then
-  cp $BATES_PTH/template/.travis.yml ./
+  cp $BATES_PTH/template/travis_template ./.travis.yml
 fi
 if [ ! -d dist ]; then
   mkdir dist
