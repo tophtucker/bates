@@ -4,7 +4,7 @@
 // import React from 'react'
 // import shallowRender from '@luiscarli/shallow-render'
 //
-// import {App} from './App'
+// import {App} from './index'
 //
 // test('App', () => {
 //   const component = shallowRender(<App/>)
