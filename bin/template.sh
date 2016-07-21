@@ -13,6 +13,12 @@ fi
 if [ ! -d dist ]; then
   mkdir dist
 fi
+if [ ! -d dist/cdn ]; then
+  mkdir dist/cdn
+fi
+if [ ! -d dist/screenshots ]; then
+  mkdir dist/screenshots
+fi
 if [ ! -e dist/200.html ]; then
   cp $BATES_PTH/template/200.html dist/
 fi
