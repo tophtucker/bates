@@ -82,11 +82,6 @@ Same as above, but every time the source change
 `npm run bates -- cov`  
 Run the test coverage and open a browser with the results.
 
-`npm run bates -- getSchema`  
-Save graphql schema.json instrospection on root, for relay apps.  
-When a schema.json is found on the root, the transpile process automatically run the 'babel-relay-plugin'.  
-Defaults the query to http://localhost:5000/graphql, a HOST env can also be passed, for eg `HOST="http://localhost:8000" npm run bates -- getSchema`
-
 **Site deployment and package releases**
 
 `npm run bates -- deploy`  

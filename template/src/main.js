@@ -48,7 +48,7 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path='/' component={App}>
       <Route component={PageWrapper}>
         {_.map((d, i) =>

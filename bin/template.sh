@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp $BATES_PTH/.eslintrc ./.eslintrc
+cp $BATES_PTH/.eslintrc.js ./.eslintrc.js
 if [ ! -e .gitignore ]; then
   cp $BATES_PTH/template/gitignore_template ./.gitignore
 fi
