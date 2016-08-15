@@ -1,7 +1,6 @@
 
 var path = require('path')
 var webpack = require('webpack')
-var NpmInstallPlugin = require('npm-install-webpack-plugin')
 
 module.exports = {
   devtool: 'eval',
