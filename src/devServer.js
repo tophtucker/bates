@@ -8,6 +8,8 @@ var execSync = require('child_process').execSync
 var detect = require('detect-port')
 var chalk = require('chalk')
 
+const pkg = require(path.join(process.cwd(), 'package.json'))
+
 var DEFAULT_PORT = process.env.PORT || 3000
 
 function clearConsole() {process.stdout.write('\x1bc')}
@@ -54,12 +56,12 @@ function configServer(port){
     var hasErrors = stats.hasErrors();
     var hasWarnings = stats.hasWarnings();
     if (!hasErrors && !hasWarnings) {
-      console.log(process.cwd());
-      console.log();
-      console.log('The app is running at:');
-      console.log();
-      console.log('  ' + chalk.cyan('http://localhost:' + port + '/'));
-      console.log();
+      console.log()
+      console.log(chalk.dim(process.cwd()))
+      console.log(chalk.blue(pkg.name + '@' + pkg.version))
+      console.log()
+      console.log('The app is running at: ' + chalk.blue('http://localhost:' + port + '/'))
+      console.log()
       return;
     }
 
