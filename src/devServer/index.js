@@ -54,8 +54,8 @@ function configServer(port){
     var hasErrors = stats.hasErrors();
     var hasWarnings = stats.hasWarnings();
     if (!hasErrors && !hasWarnings) {
-      console.log();
       console.log(process.cwd());
+      console.log();
       console.log('The app is running at:');
       console.log();
       console.log('  ' + chalk.cyan('http://localhost:' + port + '/'));
