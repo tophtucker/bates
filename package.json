@@ -8,7 +8,7 @@
     "bates": "./bin/bates.sh"
   },
   "scripts": {
-    "postinstall": "node src/postInstall/index.js",
+    "postinstall": "node src/postInstall.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "release": "node src/release"
   },
