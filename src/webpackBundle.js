@@ -1,16 +1,13 @@
 
 var path = require('path')
 var webpack = require('webpack')
-var pckg = require(path.join(process.cwd(), 'package.json'))
 
 module.exports = {
-  entry: ['./src/dist'],
+  entry: './src/main',
   output: {
-    filename: pckg.name + '.min.js',
-    library: pckg.name,
-    libraryTarget: 'var',
     path: path.join(process.cwd(), 'dist'),
-    publicPath: '/'
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -23,8 +20,6 @@ module.exports = {
       comments: false,
       compressor: {
         pure_getters: true,
-        unsafe: true,
-        unsafe_comps: true,
         screw_ie8: true,
         warnings: false,
       },
@@ -32,12 +27,12 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.jsx?$/,
       loader: 'babel',
       include: path.join(process.cwd(), 'src'),
       query: {
-        extends: path.join(__dirname, '../../.babelrc'),
-      }
+        extends: path.join(__dirname, '../.babelrc'),
+      },
     }],
   },
 }

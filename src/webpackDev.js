@@ -24,7 +24,7 @@ module.exports = {
         loader: 'babel',
         include: path.join(process.cwd(), 'src'),
         query: {
-          extends: path.join(__dirname, '../../.babelrc'),
+          extends: path.join(__dirname, '../.babelrc'),
           // cacheDirectory: true,
         }
       },
