@@ -146,16 +146,16 @@ module.exports = {
     // When file A is saved, we want to invalidate all files that import it
     // *and* that currently have lint errors. This should fix the problem.
 
-    // 'import/default': 'warn',
-    // 'import/export': 'warn',
-    // 'import/named': 'warn',
-    // 'import/namespace': 'warn',
-    // 'import/no-amd': 'warn',
-    // 'import/no-duplicates': 'warn',
-    // 'import/no-extraneous-dependencies': 'warn',
-    // 'import/no-named-as-default': 'warn',
-    // 'import/no-named-as-default-member': 'warn',
-    // 'import/no-unresolved': ['warn', { commonjs: true }],
+    'import/default': 'warn',
+    'import/export': 'warn',
+    'import/named': 'warn',
+    'import/namespace': 'warn',
+    'import/no-amd': 'warn',
+    'import/no-duplicates': 'warn',
+    'import/no-extraneous-dependencies': 'warn',
+    'import/no-named-as-default': 'warn',
+    'import/no-named-as-default-member': 'warn',
+    'import/no-unresolved': ['warn', { commonjs: true }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/jsx-equals-spacing': ['warn', 'never'],
@@ -168,7 +168,9 @@ module.exports = {
     'react/jsx-uses-react': 'warn',
     'react/jsx-uses-vars': 'warn',
     'react/no-deprecated': 'warn',
-    'react/no-direct-mutation-state': 'warn',
+
+    // Performance tweak when using d3 with react need state mutation in some cases
+    // 'react/no-direct-mutation-state': 'warn',
     'react/no-is-mounted': 'warn',
     'react/react-in-jsx-scope': 'warn',
     'react/require-render-return': 'warn',
