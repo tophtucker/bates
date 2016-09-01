@@ -3,6 +3,7 @@ node_modules
 .DS_Store
 dist/**/*.js*
 dist/cdn
-screenshots
+_screenshots
+_references
 lib
 coverage

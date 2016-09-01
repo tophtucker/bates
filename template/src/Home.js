@@ -1,34 +1,36 @@
 
 import React from 'react'
-import _ from 'lodash/fp'
-import {withRouter} from 'react-router'
-import {ui} from 'stijl'
-import PageCard from './PageCard'
+import {ui, theme} from 'stijl'
+
 import pageData from './pageData'
 
-class Pages extends React.Component {
+class Item extends React.Component {
   render() {
-    return <ui.Col>
-      {_.map(
-        (d, i) => <PageCard
-          key={i}
-          {...d}
-        />,
-        pageData,
-      )}
-    </ui.Col>
-  }
-}
-
-class Home extends React.Component {
-  render() {
-    const {props} = this
-    return <ui.Row p justifyContent='center'>
-      <ui.Col flexBasis={1400}>
-        <Pages router={props.router}/>
+    return <ui.Link to={`page/${this.props.path}`}>
+      <ui.Col margin padding css={{
+        background: theme.backgroundCard,
+        ':hover': {
+          opacity: 0.6,
+        }
+      }}>
+        <ui.H4>{this.props.title}</ui.H4>
       </ui.Col>
-    </ui.Row>
+    </ui.Link>
   }
 }
 
-export default withRouter(Home)
+export default class Home extends React.Component {
+  render() {
+    return <ui.Window>
+      <ui.Row margin flexGrow>
+        <ui.Col marginAuto flexShrink css={{
+          flexBasis: 600,
+        }}>
+          {pageData.filter(d => !d.hide).map((d, i) =>
+            <Item key={i} {...d}/>
+          )}
+        </ui.Col>
+      </ui.Row>
+    </ui.Window>
+  }
+}

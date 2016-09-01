@@ -4,5 +4,7 @@ node_modules
 dist/bundle.js
 dist/200.html
 dist/img
+lib/main.js
+*/**/*.test.js
 src
 coverage
