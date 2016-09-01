@@ -4,7 +4,7 @@ module.exports = {
   parser: 'babel-eslint',
 
   // import plugin is termporarily disabled, scroll below to see why
-  plugins: ['react'],
+  plugins: ['react', 'import'],
 
   env: {
     browser: true,
