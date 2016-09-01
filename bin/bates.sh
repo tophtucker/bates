@@ -85,6 +85,3 @@ if [ $1 = "cov" ]; then
     rm -rf .babelrc
   fi
 fi
-if [ $1 = "getSchema" ]; then
-  node $BATES_PTH/src/getSchema
-fi
