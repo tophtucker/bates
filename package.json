@@ -43,6 +43,7 @@
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-router": "^2.4.1",
+    "react-router-scroll": "^0.3.2",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
