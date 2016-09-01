@@ -2,7 +2,7 @@
 
 import {exec} from 'child_process'
 import _ from 'lodash'
-import c from 'colors/safe'
+import c from 'chalk'
 
 const LOG_CMD = 'git log `git describe --tags --abbrev=0 HEAD`..HEAD --pretty=format:"%s"'
 const TIME_CMD = 'git log -1 --format=%ar `git describe --tags --abbrev=0 HEAD`'

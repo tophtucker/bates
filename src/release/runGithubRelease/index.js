@@ -3,7 +3,7 @@
 import _ from 'lodash'
 import GitHubApi from 'github'
 import {getCommits} from '../../release/getCommits'
-import c from 'colors/safe'
+import c from 'chalk'
 import path from 'path'
 
 const pkg = require(path.join(process.cwd(), 'package.json'))

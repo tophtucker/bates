@@ -3,7 +3,7 @@
 import {exec} from 'child_process'
 import {getCommits} from '../../release/getCommits'
 import prompt from 'prompt'
-import c from 'colors/safe'
+import c from 'chalk'
 import _ from 'lodash'
 import path from 'path'
 
