@@ -5,8 +5,6 @@ import {ui} from 'stijl'
 import pkg from '../package.json'
 import pageData from './pageData'
 
-document.title = pkg.name
-
 export class Header extends React.Component {
   render() {
     return <ui.Col>

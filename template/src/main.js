@@ -2,16 +2,17 @@
 // import 'whatwg-fetch'
 // import 'babel-regenerator-runtime'
 
-document.title = 'Project'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Router, Route, browserHistory, IndexRoute, Redirect, applyRouterMiddleware} from 'react-router'
 import {useScroll} from 'react-router-scroll'
 import {insertCssObject, start} from 'stijl'
 
+import pkg from '../package.json'
 import Home from './Home'
 import PageView from './PageView'
+
+document.title = pkg.name
 
 insertCssObject({
   'html, body': {background: 'white', height: '100%', margin: 0},
