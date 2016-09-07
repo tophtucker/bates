@@ -31,13 +31,19 @@ module.exports = {
     }),
   ],
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loader: 'babel',
-      include: path.join(process.cwd(), 'src'),
-      query: {
-        extends: path.join(__dirname, '../.babelrc'),
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        include: path.join(process.cwd(), 'src'),
+        query: {
+          extends: path.join(__dirname, '../.babelrc'),
+        },
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
-    }],
+    ],
   },
 }
