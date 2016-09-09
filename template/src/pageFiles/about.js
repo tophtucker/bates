@@ -1,5 +1,5 @@
 
-export const title = 'Page'
+export const title = 'About'
 export const hide = false
 
 import React from 'react'

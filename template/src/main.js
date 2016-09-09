@@ -18,8 +18,10 @@ insertCssObject({
   'html, body': {background: 'white', height: '100%', margin: 0},
   '#root': {height: '100%'},
 })
-const myTheme = {}
-start([myTheme])
+const myExtension = {
+  theme: {},
+}
+start([myExtension])
 
 export class HotReloadHack extends React.Component {
   render() {return this.props.children}
