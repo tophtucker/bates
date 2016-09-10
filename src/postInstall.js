@@ -24,15 +24,15 @@ if (!pkg.eslintConfig) {
     "extends": "./node_modules/bates/.eslintrc.js"
   }
 }
-if (!pkg.dependencies) {
-  pkg.dependencies = {
-    "lodash": "^4.1.0",
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "react-router": "^2.4.1",
-    "react-router-scroll": "^0.3.2",
-    "stijl": "^0.10.1"
-  }
-}
+// if (!pkg.dependencies) {
+//   pkg.dependencies = {
+//     "lodash": "^4.1.0",
+//     "react": "^15.0.0",
+//     "react-dom": "^15.0.0",
+//     "react-router": "^2.4.1",
+//     "react-router-scroll": "^0.3.2",
+//     "stijl": "^0.10.1"
+//   }
+// }
 
 fs.writeFileSync(pkgFilename, JSON.stringify(pkg, null, 2))
