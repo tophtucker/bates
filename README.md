@@ -1,8 +1,9 @@
 
 ## Bates
-> He knows how I like my front-end: automated.
 
-The contemporary front-end stack and build pipeline is a very opinionated place, with lots of choices for a lot of different setups. **Bates is a build config as a dependency, to help automate a specific set of choices for React front-end projects.**
+The contemporary front-end stack and build pipeline is a very opinionated place, with lots of choices for a lot of different setups.
+
+**Bates is a build config as a dependency, to help automate a specific set of choices for React front-end projects.**
 
 ## Quick start
 
@@ -25,18 +26,18 @@ $ npm init # setup npm for the project
 
 Install and run Bates
 ```sh
-npm i bates -S # install bates
-npm run bates -- template # create base files
+$ npm i bates -S # install and save bates
+$ npm run bates -- template # create base files
 
-npm run bates -- start # start dev server at: http://localhost:3000
-# run tests and lint on change
-# hit ctrl+c to close the server
+$ npm start # start dev server.
+# The dev server hot reloads the components, run tests and lint on change.
+# Hit `ctrl+c` to close.
 ```
-The dev server hot reloads the components, run tests and lint on change. Hit `ctrl+c`
 
-- The site entry point is on `src/main.js`, theme and routes are defined there.  
-- The first component loaded by the template route is on `src/Home.js`.  
-- The entry point for when releasing projects as npm modules is on `src/index.js`.
+Base files:
+- Site entry point is on `src/main.js`, theme and routes are defined there.  
+- Entry component loaded by the template route is on `src/Home.js`.  
+- Package entry point for when releasing projects as npm modules is on `src/index.js`.
 - Bates uses [Stijl](http://stijl.surge.sh/) for the UI components of his template.
 
 When you want to deploy the site run:
@@ -47,11 +48,11 @@ npm run bates -- deploy
 # the site will be available at http://yourDomain.surge.sh
 ```
 
-For information on setting up Travis continuous deploy/release see: [travis setup](docs/travis.md)
+For information on setting up Travis continuous deploy/releases see: [travis setup](docs/travis.md)
 
 ## Folder Structure
 
-```
+```sh
 my-project/
   dist/ # site files go here
     200.html
@@ -67,6 +68,9 @@ my-project/
 
 ## API
 
+Bates adds its script to the `package.json` file. So that from the project folder he can be executed as `npm run bates -- <args>`.  
+*Pay attention to the [space](https://docs.npmjs.com/cli/run-script) after the double dash*.
+
 **Development**
 
 `npm run bates -- template`  
@@ -76,7 +80,8 @@ If missing, add some base files to your project.
 Prune and update your dependencies.  
 Start a hot-reloaded, babel transpiled, server at localhost:3000.  
 Run tests and lint on change.  
-Tell you about your outdated packages, your last release and what have changed until now.
+Tell you about your outdated packages, your last release and what have changed until now.  
+Alias: `npm start`.
 
 `npm run bates -- server`  
 Run just the server from the *start* command.  
@@ -84,7 +89,8 @@ The server defaults to port 3000, when the port is not available it uses the nex
 A PORT env var can also be passed. Eg: `PORT=8080 npm run bates -- server`
 
 `npm run bates -- test`  
-Test and lint your /src. Test files need to be named `*.test.js`
+Test and lint your /src. Test files need to be named `*.test.js`.  
+Alias: `npm test`.
 
 `npm run bates -- testWatch`  
 Same as above, but for every time the source changes.
