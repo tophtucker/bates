@@ -99,7 +99,7 @@ function runTestBeforeTag(newVersionKey) {
 const promptProp = {
   name: 'yesno',
   message: 'Push new tag [y/N]',
-  validator: /y[es]*|n[o]?/,
+  validator: /y[es]*|n[o]?/i,
   warning: 'Must respond yes or no',
 }
 
